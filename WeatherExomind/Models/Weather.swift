@@ -8,24 +8,16 @@
 import Foundation
 
 struct Weather: Codable {
-  let coordinates: Coordinates
+  let coord: Coordinates
   let weather: [WeatherElements]
   let main: MainForecast
   let wind: WindForecast
   let clouds: CloudForecast
   let dt: Date
-  let sun: CountryInfo
+  let sys: CountryInfo
   let id: Int
   let name: String
   
-  
-  enum WeatherCodingKeys: String, CodingKey {
-    case coordinates = "coord"
-    case weather, main, wind, clouds
-    case date = "dt"
-    case sun = "sys"
-    case id, name
-  }
   
   struct Coordinates: Codable {
     let lat, lon: Double
