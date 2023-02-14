@@ -15,6 +15,7 @@
 		9263D67C299B825100786C60 /* loadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D67B299B825100786C60 /* loadData.swift */; };
 		9263D67E299B842C00786C60 /* WeatherPreview.json in Resources */ = {isa = PBXBuildFile; fileRef = 9263D67D299B842C00786C60 /* WeatherPreview.json */; };
 		9263D680299B862600786C60 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D67F299B862600786C60 /* ForecastCell.swift */; };
+		9263D682299B8A0300786C60 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D681299B8A0300786C60 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9263D67B299B825100786C60 /* loadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadData.swift; sourceTree = "<group>"; };
 		9263D67D299B842C00786C60 /* WeatherPreview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherPreview.json; sourceTree = "<group>"; };
 		9263D67F299B862600786C60 /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		9263D681299B8A0300786C60 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		9263D676299B7E5D00786C60 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9263D681299B8A0300786C60 /* WeatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9263D680299B862600786C60 /* ForecastCell.swift in Sources */,
+				9263D682299B8A0300786C60 /* WeatherViewModel.swift in Sources */,
 				9263D66B299B7CD400786C60 /* ContentView.swift in Sources */,
 				9263D67A299B7FB900786C60 /* Weather.swift in Sources */,
 				9263D669299B7CD400786C60 /* WeatherExomindApp.swift in Sources */,
