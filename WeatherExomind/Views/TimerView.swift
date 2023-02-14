@@ -19,6 +19,7 @@ struct TimerView: View {
   var intervals: [CGFloat] = [0.00, 60.00, 120.00, 180.00, 240.00]
   var body: some View {
     VStack {
+      Spacer()
       if value != 360.00 {
         ZStack(alignment: .leading) {
           Capsule()

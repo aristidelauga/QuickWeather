@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherViewModel: ObservableObject {
   @Published var forecasts = [Weather]()
-  private var apiKey = "VotreCléAPI"
+  private var apiKey = "VOTRECLEAPI"
   
   func loadingDialog(_ value: Int) -> String {
     var text = ""
@@ -33,7 +33,10 @@ class WeatherViewModel: ObservableObject {
       fatalError("URL incomplète ou défaillante") }
     URLSession.shared.dataTask(with: url) { data, response, error in
       if let data = data {
-        let decoded = try? JSONDecoder().decode(Weather.self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = dateDecodingStrategy
+        decoder.keyDecodingStrategy = keyDecodingStrategy
+        let decoded = try? decoder.decode(Weather.self, from: data)
         if let decoded = decoded {
           DispatchQueue.main.async {
             self.forecasts.append(decoded)

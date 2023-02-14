@@ -17,8 +17,26 @@ struct ForecastCell: View {
           .frame(width: 210, alignment: .leading)
         Text(weather.weather.first!.description.capitalized)
         
-        Text("Feels like : \(Int(weather.main.feelsLike.rounded(.awayFromZero)))ºC")
+        Text("Ressenti : \(Int(weather.main.feelsLike.rounded(.awayFromZero)))ºC")
           .fontWeight(.thin)
+        Text("Indice d'humidité: \(weather.main.humidity)%")
+          .fixedSize(horizontal: true, vertical: false)
+        HStack {
+          Image(systemName: "sunrise.fill")
+            .foregroundColor(Color.yellow)
+            .imageScale(.large)
+          Text("Lever du soleil: \(weather.sys.sunrise.formatted(date: .omitted, time: .shortened))")
+            .fixedSize(horizontal: true, vertical: false)
+
+        }
+        HStack(alignment: .top) {
+          Image(systemName: "sunset.fill")
+            .foregroundColor(Color.yellow)
+            .imageScale(.large)
+          Text("Coucher du soleil: \(weather.sys.sunset.formatted(date: .omitted, time: .shortened))")
+            .fixedSize(horizontal: true, vertical: false)
+
+        }
       }
       
       Spacer()
