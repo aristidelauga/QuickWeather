@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherViewModel: ObservableObject {
   @Published var forecasts = [Weather]()
-  private var apiKey = "bf48e1a1a0ba2bd6a1e7c360cf158755"
+  private var apiKey = "VotreCléAPI"
   
   func loadingDialog(_ value: Int) -> String {
     var text = ""

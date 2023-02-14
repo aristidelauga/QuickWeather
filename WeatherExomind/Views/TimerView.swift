@@ -50,16 +50,18 @@ struct TimerView: View {
           }
         }
       }
-      Text("\(Int(60 - count))")
       Text("*\(forecast.loadingDialog(count))*")
         .fontWeight(.thin)
         .onReceive(timer) { _ in
           if value < maxWidth {
             if intervals.contains(value) {
+              // Je trouve le premier index qui correspond à 'value', qui est mis à jour chaque seconde
               if let cityIndex = intervals.firstIndex(of: value) {
                 forecast.makeAPICall(city: cities[cityIndex])
               }
             }
+            // La largeur de la barre étant égale à 360, en incrémentant 'value' de 6 par seconde,
+            // la barre se remplira en 60 secondes: 60 * 6 = 360
             value += 6
           }
           if count < 60 {
