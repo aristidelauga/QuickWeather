@@ -14,7 +14,7 @@ struct ForecastCell: View {
       VStack(alignment: .leading, spacing: 5) {
         Text(weather.name)
           .font(.system(.title, design: .rounded, weight: .bold))
-          .frame(width: 120, alignment: .leading)
+          .frame(width: 210, alignment: .leading)
         Text(weather.weather.first!.description.capitalized)
         
         Text("Feels like : \(Int(weather.main.feelsLike.rounded(.awayFromZero)))ºC")

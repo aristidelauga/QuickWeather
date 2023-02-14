@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var forecast = WeatherViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+          VStack(spacing: 10) {
+              Text("Bienvenue sur l'app **Météo** ! \nVeuillez appuyer sur le bouton ci-dessous pour commencer")
+              .multilineTextAlignment(.center)
+            NavigationLink {
+              TimerView()
+            } label: {
+              Text("Commencer")
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(15)
+            }
+          }
+          .padding()
+          .onAppear { forecast.forecasts = [Weather]() }
         }
-        .padding()
     }
 }
 

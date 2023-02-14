@@ -16,6 +16,7 @@
 		9263D67E299B842C00786C60 /* WeatherPreview.json in Resources */ = {isa = PBXBuildFile; fileRef = 9263D67D299B842C00786C60 /* WeatherPreview.json */; };
 		9263D680299B862600786C60 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D67F299B862600786C60 /* ForecastCell.swift */; };
 		9263D682299B8A0300786C60 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D681299B8A0300786C60 /* WeatherViewModel.swift */; };
+		9263D684299B8C6E00786C60 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263D683299B8C6E00786C60 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9263D67D299B842C00786C60 /* WeatherPreview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherPreview.json; sourceTree = "<group>"; };
 		9263D67F299B862600786C60 /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		9263D681299B8A0300786C60 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		9263D683299B8C6E00786C60 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				9263D66A299B7CD400786C60 /* ContentView.swift */,
 				9263D67F299B862600786C60 /* ForecastCell.swift */,
+				9263D683299B8C6E00786C60 /* TimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9263D684299B8C6E00786C60 /* TimerView.swift in Sources */,
 				9263D680299B862600786C60 /* ForecastCell.swift in Sources */,
 				9263D682299B8A0300786C60 /* WeatherViewModel.swift in Sources */,
 				9263D66B299B7CD400786C60 /* ContentView.swift in Sources */,
